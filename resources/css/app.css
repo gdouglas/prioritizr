@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat');
+
+:root {
+    font-size: 16px;
+    --top-space: 2rem;
+}
+#app {
+    display: grid;
+    grid-template-columns: 650px 350px;
+    grid-template-areas:
+        "header header"
+        "content nav";
+    font-family: 'Montserrat', sans-serif;
+    margin: 1em;
+    padding: 1em;
+}
+.priority-title {
+    margin-bottom: var(--top-space);
+    display: grid;
+}
+.sliders {
+    display: grid;
+    grid-template-columns: 200px fr;
+}
+header {
+    grid-area: header;
+}
+h1 {
+    grid-column: 1/-1;
+    margin: 0 0 15px 0;
+    align-self: center;
+    font-family: 'Monoton', cursive;
+    font-size: 4.7em;
+    line-height: 1em;
+    font-weight: 100;
+    margin-bottom: var(--top-space);
+}
+h1:after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: teal;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 10px 0 0 teal;
+}
+h2 {
+    margin: 0;
+}
+.creating {
+    display: grid;
+    grid-area: content;
+    margin-top: var(--top-space);
+}
+.nav {
+    display: grid;
+    grid-area: nav;
+    margin-top: var(--top-space);
+}
+.nav li {
+    margin: 0;
+    list-style-type: none;
+}
+.nav li a{
+    padding: 15px;
+    display: block;
+    color: royalblue;
+    text-decoration: none;
+    border-bottom:1px solid royalblue
+}
+.nav li:hover a{
+    background: whitesmoke
+}
+input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid forestgreen;
+    font-size: 1.5em;
+}
+.add {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    line-height: 1em;
+    background:#fff;
+    font-size: 2em;
+}
+.save {
+    background: lightsteelblue;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    font-size: 2em;
+    margin-top: 1em;
+}
+button {
+    cursor: pointer;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 19.3px 0;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1.4px;
+    cursor: pointer;
+    box-shadow: 0.9px 0.9px 5.1px rgba(0, 0, 0, 0.28), 0px 0px 0.9px rgba(13, 13, 13, 0.28);
+    background: #0072a9;
+    border-radius: 2.2px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #000000;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -19.3px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #0098e1;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1.4px;
+    cursor: pointer;
+    box-shadow: 0.9px 0.9px 5.1px rgba(0, 0, 0, 0.28), 0px 0px 0.9px rgba(13, 13, 13, 0.28);
+    background: #0072a9;
+    border-radius: 2.2px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #000000;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 1.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #004c71;
+    border: 0px solid #000101;
+    border-radius: 4.4px;
+    box-shadow: 0.9px 0.9px 5.1px rgba(0, 0, 0, 0.28), 0px 0px 0.9px rgba(13, 13, 13, 0.28);
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #0072a9;
+    border: 0px solid #000101;
+    border-radius: 4.4px;
+    box-shadow: 0.9px 0.9px 5.1px rgba(0, 0, 0, 0.28), 0px 0px 0.9px rgba(13, 13, 13, 0.28);
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #000000;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background: #ffffff;
+    cursor: pointer;
+    height: 1.4px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #0072a9;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #0098e1;
+  }
